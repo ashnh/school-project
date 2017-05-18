@@ -11,7 +11,9 @@ public class SideScroller : MonoBehaviour {
 	
 	public GameObejct ui;
 	
-	public GameObject
+	bool done;
+	
+	public GameObject finishPlatform;
 	
 	public float jumpSpeed;
 	public float runSpeed;
