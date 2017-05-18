@@ -11,8 +11,6 @@ public class SideScroller : MonoBehaviour {
 	
 	public GameObejct ui;
 	
-	bool done;
-	
 	public GameObject finishPlatform;
 	
 	public float jumpSpeed;
@@ -35,7 +33,15 @@ public class SideScroller : MonoBehaviour {
 		
 		if (player.GetComponent <Collider2D> ().isTouching (risingSediment.GetComponent <Collider2D> ())) {
 			UnityEngine.SceneManagement.SceneManager.LoadScene (UnityEngine.SceneManagement.SceneManager.sceneLoaded);
-		}
+		} 
+		
+		
+		if (player.GetComponent <Collider2D> ().isTouching (finishPlatform.GetComponent<Collider2D> ())){ 
+			Time.scale = 0;
+			ui.transform.localScale = new Vector3 (1, 1, 1);
+		} 
+		risingSediment.transform.position = new Vector3 (risingSediment.transform.position.x, risingSediment.transform.position
+								 y+0.3F, risingSediment.transform.position.z);
 		
 		
 		
