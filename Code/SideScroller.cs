@@ -9,6 +9,10 @@ public class SideScroller : MonoBehaviour {
 	
 	public GameObject risingSediment;
 	
+	public GameObejct ui;
+	
+	public GameObject
+	
 	public float jumpSpeed;
 	public float runSpeed;
 	
@@ -25,6 +29,10 @@ public class SideScroller : MonoBehaviour {
 			player.GetComponent <Rigidbody2D> ().velocity = new Vector2 (-runSpeed, player.GetComponent <Rigidbody2D> ().velocity.y          );
 		} else if (Input.GetKeyDown (KeyCode.D)) {
 			player.GetComponent <Rigidbody2D> ().velocity = new Vector2 (runSpeed, player.GetComponent <Rigidbody2D> ().velocity.y          );
+		}
+		
+		if (player.GetComponent <Collider2D> ().isTouching (risingSediment.GetComponent <Collider2D> ())) {
+			UnityEngine.SceneManagement.SceneManager.LoadScene (UnityEngine.SceneManagement.SceneManager.sceneLoaded);
 		}
 		
 		
