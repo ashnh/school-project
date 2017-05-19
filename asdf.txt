@@ -1,11 +1,13 @@
-Weathering - tap button to go
+//Weathering - tap button to go (done)
 //Choose - Plant or Ocean (done)
-Plant - fill root holes w/ phosphorous
+//Plant - fill root holes w/ phosphorous (done)
 //Choose - Decompose/eaten (done)
-Detrius
+//Detrius (done)
 (Choose - Plant or Ocean)
-Ocean - Tetris blocks layer
-Volcano eruption - choice
-Uplifting - Side scrolling but up
-Human interaction - moba fight human
-cheesy textbox - Oh no, you must stop human bad runoff
+//Ocean - Tetris blocks layer (done)
+//Volcano eruption - choice (done)
+//Uplifting - Side scrolling but up (done)
+//transistion (done)
+//Human interaction - moba fight human
+//cheesy textbox - Oh no, you must stop human bad runoff (done)
+//john cena - end song
