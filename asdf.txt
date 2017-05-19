@@ -5,6 +5,7 @@ Plant - fill root holes w/ phosphorous
 Detrius
 (Choose - Plant or Ocean)
 Ocean - Tetris blocks layer
+Volcano eruption - choice
 Uplifting - Side scrolling but up
 Human interaction - moba fight human
 cheesy textbox - Oh no, you must stop human bad runoff

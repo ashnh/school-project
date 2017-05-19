@@ -36,22 +36,24 @@ public class Weathering : MonoBehaviour {
 		
 		if (progressBar.transform.localScale.x >= .66F) {
 			rock.sprite = oneOfThree;
-			progressBar.GetComponent <Renderer> ().material = firstColor;
-		} else if (progressBar.transform.localScale.x >= .66F) {
+			progressBar.GetComponentInChildren <Renderer> ().material = firstColor;
+		} else if (progressBar.transform.localScale.x >= .33F) {
 			rock.sprite = twoOfThree;
-			progressBar.GetComponent <Renderer> ().material = secondColor;
+			progressBar.GetComponentInChildren <Renderer> ().material = secondColor;
 		} else {
 			rock.sprite = threeOfThree;
-			progressBar.GetComponent <Renderer> ().material = thirdColor;
+			progressBar.GetComponentInChildren <Renderer> ().material = thirdColor;
 		}
 
 		if (progressBar.transform.localScale.x <= 0) {
 			finished = true;
 		}
 
+		Debug.Log (finished);
+
 		if (finished) {
 			popup.transform.localScale = new Vector3 (1, 1, 1);
-			Time.scale = 0;
+			Time.timeScale = 0;
 		}
 
 	}
